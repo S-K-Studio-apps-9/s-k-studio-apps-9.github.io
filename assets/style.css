@@ -1,0 +1,94 @@
+/* アプリのサポートサイト共通スタイル(あいこ／Aiko の色に合わせた、クリーム地＋キャラメル) */
+:root {
+  --bg: #FFF8E7;
+  --card: #FFFFFF;
+  --text: #4A3B32;
+  --text-sub: #7A604B;
+  --accent: #E09852;
+  --leaf: #9CBE6E;
+  --line: #EADBC0;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #EAF2CC 0%, var(--bg) 320px);
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", system-ui, -apple-system, sans-serif;
+  line-height: 1.8;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+header.site img {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(107, 74, 43, 0.18);
+}
+
+h1 { font-size: 1.6rem; margin: 0; line-height: 1.4; }
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.5rem;
+  padding-left: 10px;
+  border-left: 4px solid var(--accent);
+}
+h3 { font-size: 1rem; margin: 1.2rem 0 0.3rem; }
+
+p, li { font-size: 0.97rem; }
+.sub { color: var(--text-sub); font-size: 0.9rem; }
+
+a { color: #B86A2A; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.app-list { list-style: none; padding: 0; margin: 0; }
+.app-list li a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text);
+}
+.app-list img { width: 56px; height: 56px; border-radius: 14px; }
+.app-list strong { display: block; font-size: 1.05rem; }
+
+nav.links { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0 0; }
+nav.links a {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #F6E2BA;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 48px;
+  color: var(--text-sub);
+  font-size: 0.85rem;
+  text-align: center;
+}
