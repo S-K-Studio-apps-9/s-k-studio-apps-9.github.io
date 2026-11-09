@@ -14,6 +14,9 @@ aiko/               … あいこ（Aiko）
   privacy.html      … プライバシーポリシー
   terms.html        … 利用規約
   icon.png          … アプリアイコン（256px）
+taskpnk/            … Taskpnk（英語・日本語の併記）
+  index.html / privacy.html / terms.html / icon.png
+  theme.css         … Taskpnk 用のダーク配色（共通 style.css の後に読み込む）
 ```
 
 ## 新しいアプリを追加するとき

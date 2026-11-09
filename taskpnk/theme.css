@@ -1,0 +1,55 @@
+/* Taskpnk 用の配色（アプリの CyberPalette に合わせたダークテーマ）。共通の assets/style.css の後に読み込む */
+:root {
+  color-scheme: dark;
+  --bg: #050814;
+  --card: #12141C;
+  --text: #E6EEF7;
+  --text-sub: #8D96A3;
+  --accent: #00EBFF;
+  --pink: #FF2E9E;
+  --line: #232A36;
+}
+
+body {
+  background: linear-gradient(180deg, #0B1530 0%, var(--bg) 360px);
+  background-color: var(--bg);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, -apple-system, sans-serif;
+}
+
+h1 { letter-spacing: 0.04em; }
+h2 { border-left-color: var(--accent); }
+
+a { color: var(--accent); }
+
+header.site img {
+  border: 1px solid rgba(0, 235, 255, 0.35);
+  box-shadow: 0 0 18px rgba(0, 235, 255, 0.25);
+}
+
+nav.links a {
+  background: rgba(0, 235, 255, 0.08);
+  border: 1px solid rgba(0, 235, 255, 0.35);
+  color: var(--text);
+}
+
+nav.lang { margin: 8px 0 0; font-size: 0.9rem; }
+nav.lang a { margin-right: 14px; }
+
+section.lang-block + section.lang-block {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--pink);
+  border: 1px solid rgba(255, 46, 158, 0.45);
+}
+
+table.plan { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+table.plan th, table.plan td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.plan th { color: var(--text-sub); font-weight: 600; }
